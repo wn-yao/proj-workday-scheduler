@@ -1,10 +1,9 @@
 var currentDayEl = $('currentDay');
 var containerEl = $('container');
 
-function displayTime() {
-    var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
-    //console.log(rightNow);
+//currently not working and unsure why, able to show in console.log
+var currentDateTime = setInterval(function() {
+    var rightNow = moment().format('MMM DD, YYY [at] hh:mm:ss a'); 
     currentDayEl.text(rightNow);
-  }
-
-  setInterval(displayTime, 1000);
+    console.log(rightNow);
+},1000);

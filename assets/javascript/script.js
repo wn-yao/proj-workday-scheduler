@@ -10,14 +10,16 @@ var currentDateTime = setInterval(function () {
     currentDayEl.text(rightNow);
 }, 1000);
 
-// set background color 
+// get current hour in military hour format 
 
 var currentHour;
 currentHour = moment().format('H');
 console.log(currentHour);
 
+// set background color 
 var currentTimeBlcok;
-
+//using each method to loop the available hours 
+//this refers to the element that belongs to the available hours 
 availableHours.each(function () {
     currentTimeBlcok = parseInt($(this).attr("data-timeBlcok"));
     console.log(currentTimeBlcok);

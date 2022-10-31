@@ -42,3 +42,8 @@ https://jquery.com/
 
 Please refer to MIT License.
 
+## Deployed Application and Screenshot
+
+https://wn-yao.github.io/proj-workday-scheduler/
+
+![Screenshot](https://github.com/wn-yao/proj-workday-scheduler/blob/main/assets/images/Deployed%20webpage.jpg)

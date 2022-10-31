@@ -32,4 +32,16 @@ availableHours.each(function () {
     }
 })
 
-;
+//using onclick for save button to save inputs
+//wokred with tutor to get this 
+//the sibling method allows to return all sibiling elements of the selected element that share the same parent
+//class saveBth and hour share the same div thus used here
+
+var saveButton = $('.saveBtn');
+
+saveButton.click(function(){
+    var time = $(this).siblings(".hour").text();
+    var description= $(this).siblings(".description").val();
+    localStorage.setItem(time, description);
+})
+
